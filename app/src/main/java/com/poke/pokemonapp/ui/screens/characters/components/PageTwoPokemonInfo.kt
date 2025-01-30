@@ -54,29 +54,15 @@ fun PageTwoInfo(
             ) {
                 pokemonInfo.abilities.forEach { ability ->
                     Text(
-                        text = ability.ability.toString(),
+                        text = ability.ability.name,
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp
                     )
                 }
 
             }
-
-            Column(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Text(
-                    text = pokemonInfo.weight.toString(),
-                    fontWeight = FontWeight.Bold,
-                    fontSize = 30.sp
-                )
-                Text(
-                    text = "Peso",
-                    fontWeight = FontWeight.Light,
-                    fontSize = 18.sp
-                )
-            }
             Spacer(Modifier.weight(1f))
+
             Column(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {

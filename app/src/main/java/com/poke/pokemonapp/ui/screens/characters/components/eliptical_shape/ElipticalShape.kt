@@ -38,6 +38,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
 
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -140,11 +141,12 @@ fun EllipticalShape(
         ) { page ->
             when (page) {
                 0 -> {
-                    Column(
+
+                    Box (
                         Modifier.fillMaxSize(),
-                        horizontalAlignment = Alignment.CenterHorizontally,
-                        verticalArrangement = Arrangement.Bottom
+                        contentAlignment = Alignment.BottomCenter
                     ) {
+
                         CircularPhoto(
                             backGround = Color.Black,
                             placeHolder = R.drawable.placeholder,
@@ -152,6 +154,15 @@ fun EllipticalShape(
                             name = selectedPokemon.name,
                             isPresented = true
                         )
+                        Box (
+                            Modifier.fillMaxSize().background(Color.Transparent),
+                            contentAlignment = Alignment.CenterEnd
+                        ){
+                            Icon(
+                                painter = painterResource(R.drawable.foward_arrow),
+                                contentDescription = null
+                            )
+                        }
                     }
                 }
 

@@ -27,6 +27,7 @@ import androidx.paging.compose.collectAsLazyPagingItems
 import com.poke.pokemonapp.domain.model.Pokemon
 import com.poke.pokemonapp.ui.screens.characters.components.AddFavoriteState
 import com.poke.pokemonapp.ui.screens.characters.components.PageOneInfo
+import com.poke.pokemonapp.ui.screens.characters.components.PageTwoInfo
 import com.poke.pokemonapp.ui.screens.characters.components.Progressbar
 import com.poke.pokemonapp.ui.screens.characters.components.SheetPaddingContent
 import com.poke.pokemonapp.ui.screens.characters.components.eliptical_shape.EllipticalShape
@@ -112,6 +113,11 @@ fun CharactersContent(
             visible = currentPage == 0
         ) {
             PageOneInfo(com.poke.pokemonapp.core.Config.pokemonInfo[selected])
+        }
+        AnimatedVisibility(
+            visible = currentPage == 1
+        ) {
+            PageTwoInfo(com.poke.pokemonapp.core.Config.pokemonInfo[selected])
         }
         AnimatedVisibility(
             visible = currentPage == 5

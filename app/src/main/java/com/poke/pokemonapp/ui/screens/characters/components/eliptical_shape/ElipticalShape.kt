@@ -121,8 +121,8 @@ fun EllipticalShape(
                 drawOval(
                     brush = animatedBrush,
                     topLeft = Offset(
-                        (size.width - width) / 2f, // Centrado horizontalmente
-                        -height / 5f // Posicionado para que solo se vea la mitad inferior
+                        (size.width - width) / 2f,
+                        -height / 5f
                     ),
                     size = androidx.compose.ui.geometry.Size(width, height)
                 )

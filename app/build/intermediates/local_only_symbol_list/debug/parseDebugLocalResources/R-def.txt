@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color list_backgroung
+color primary
+color primary_light
+color secondary
+color teal_700
+color tertiary
+color white
+drawable email
+drawable favorite
+drawable favorite_filled
+drawable ic_arrow
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable pika_login
+drawable placeholder
+font pokemon_solid
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+raw pokeball_progresbar
+raw splash_anim
+raw success
+string app_name
+string apyKeyMaps
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
+string project_id
+style Theme.PokemonApp
+xml backup_rules
+xml data_extraction_rules

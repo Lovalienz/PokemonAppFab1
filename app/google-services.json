@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "309877359624",
+    "project_id": "pokeapp-9eb05",
+    "storage_bucket": "pokeapp-9eb05.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309877359624:android:782ecbf9f0d55bd366bdbd",
+        "android_client_info": {
+          "package_name": "com.poke.pokemonapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8uTV2_E2iKupHC5N5Z21tKNdqZQkgvUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
